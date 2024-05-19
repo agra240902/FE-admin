@@ -1,31 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Page</title>
+  <title>Tampilan Admin Sederhana</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .menu {
+      margin-bottom: 20px;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    .table th {
+      text-align: left;
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
-    <header style="background-color: #4CAF50; color: white; padding: 10px 0; text-align: center;">
-        <h1>Customer Information</h1>
-    </header>
-    <main style="padding: 20px;">
-        <section style="background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-            <h2 style="color: #333;">Personal Details</h2>
-            <p style="margin: 10px 0;"><strong>Name:</strong> John Doe</p>
-            <p style="margin: 10px 0;"><strong>Email:</strong> john.doe@example.com</p>
-            <p style="margin: 10px 0;"><strong>Phone:</strong> (123) 456-7890</p>
-        </section>
-        <section style="background-color: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-            <h2 style="color: #333;">Address</h2>
-            <p style="margin: 10px 0;"><strong>Street:</strong> 123 Main St</p>
-            <p style="margin: 10px 0;"><strong>City:</strong> Anytown</p>
-            <p style="margin: 10px 0;"><strong>State:</strong> Anystate</p>
-            <p style="margin: 10px 0;"><strong>ZIP Code:</strong> 12345</p>
-        </section>
-    </main>
-    <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0;">
-        <p>&copy; 2024 Customer Service. All rights reserved.</p>
-    </footer>
+<body>
+  <h1>Dashboard Admin</h1>
+
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="#">Pengguna</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Pesanan</a></li>
+      </ul>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Budi</td>
+          <td>budi@example.com</td>
+          <td>Aktif</td>
+        </tr>
+        <tr>
+          <td>Ani</td>
+          <td>ani@example.com</td>
+          <td>Tidak Aktif</td>
+        </tr>
+        <tr>
+          <td>Caca</td>
+          <td>caca@example.com</td>
+          <td>Menunggu Verifikasi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
